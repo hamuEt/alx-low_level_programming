@@ -3,20 +3,19 @@
 #include <time.h>
 
 /**
-* main - Entry point
-* Description: prints all possible combinations of single-digit numbers
-* Return: Always 0 (Success)
+*main - Entery point
+*Return: Always 0 (success)
 */
 
 int main(void)
-{
 
-int digit1;
-
-for (digit1 = 0; digit1 <= '9'; digit1++)
 {
-putchar(digit1);
-if (digit1 != '9')
+int d;
+
+for (d = '0'; d <= '9'; d++)
+{
+putchar(d);
+if (d != 9)
 {
 putchar(',');
 putchar(' ');
